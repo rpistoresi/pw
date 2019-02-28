@@ -1,0 +1,36 @@
+<h1 class="section-header" id="about">About</h1>
+<mat-tab-group
+  dynamicHeight
+  animationDuration="1000ms">
+  <mat-tab [label]="tab.label" *ngFor="let tab of tabs">
+    <div class="about-content" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+      <div><img [src]="tab.picture"></div>
+      <div *ngIf="tab.default">
+        <h3>{{ tab.title }}</h3>
+        <p>{{ tab.content1 }}</p>
+        <p>{{ tab.content2 }}</p>
+      </div>
+      <mat-list fxFlex *ngIf="!tab.default">
+        <mat-list-item class="mat-list-item-word-wrap" *ngFor="let item of tab.list">
+          <fa-icon mat-list-icon size="md" [icon]="['fas', item.icon]"></fa-icon>
+          <h4 mat-line>{{ item.item }}</h4>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<!-- <h2>Angular Animations In Lists</h2>
+<button (click)="toggle()">Show / Hide Items</button>
+<hr />
+<code><a href="https://angular.io/api/animations/stagger">
+stagger</a> </code> an animation-specific function that is designed to be used inside of Angular's animation DSL language. It is designed to be used inside of an animation query() and works by issuing a timing gap between after each queried item is animated.
+
+<hr />
+<div [@listAnimation]="items.length"
+    (@listAnimation.start)="logAnimation($event)"
+    (@listAnimation.done)="logAnimation($event)">
+  <div *ngFor="let item of items; let i=index">
+    <div>{{ item }}</div>
+  </div>
+</div> -->

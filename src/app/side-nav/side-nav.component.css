@@ -1,0 +1,37 @@
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  position: fixed;
+  top: 48px;
+  padding-top: 1rem;
+}
+
+.side-container {
+  top: 0px;
+  padding-top: 64px;
+}
+
+.side-item {
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+
+.side-icon {
+  padding-right: 40px;
+}
+
+.spacer {
+  height: 75px;
+}
+
+.extra-margins {
+  margin: 10px 20px;
+}
+
+@media (min-width: 481px) {
+  .extra-margins {
+    margin: 10px 100px;
+  }
+}

@@ -1,0 +1,30 @@
+<div [class.custom-dark-theme]="header.darkMode">
+  <app-header #header></app-header>
+  <mat-sidenav-container fxFlexFill class="side-container">
+    <mat-sidenav #sidenav fxLayout="column" class="sidenav" position="start">
+      <div fxLayout="column" *ngFor="let item of navItems">
+        <button
+          mat-button
+          class="side-item"
+          (click)="closeSidenav()"
+          fxLayoutAlign="start">
+          <mat-icon class="side-icon">{{ item.icon }}</mat-icon>{{ item.label }}</button>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="extra-margins">
+        <div #intro></div>
+        <app-intro></app-intro>
+        <div #about class="spacer"></div>
+        <app-about></app-about>
+        <div #experience class="spacer"></div>
+        <app-experience></app-experience>
+        <div #projects class="spacer"></div>
+        <app-projects></app-projects>
+        <div #contact class="spacer"></div>
+        <app-contact></app-contact>
+      </div>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

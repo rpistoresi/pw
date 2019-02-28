@@ -1,0 +1,28 @@
+.about-content {
+  font-size: 20px;
+}
+
+mat-list-item:hover fa-icon, mat-list-item:hover h4, h3 {
+  color: tan;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.mat-list-icon {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.mat-list-item.mat-list-item-word-wrap {
+  height: initial !important;
+  padding: 5px 0;
+}
+.mat-list-item-word-wrap .mat-line {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}

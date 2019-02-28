@@ -1,27 +1,39 @@
-# Skeleton
+# Personal Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+This project started from a desire to create a portfolio website and turned into a personal project all on its own. I'm working towards creating a and this was a great way to learn about some of the mode
 
-## Development server
+## Getting Started
+1.  **Install the Angular CLI**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    ```sh
+    npm install -g @angular/cli
+    ```
 
-## Code scaffolding
+2.  **Install dependencies**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    ```sh
+    npm install
+    ```
 
-## Build
+3.  **Start the development server**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    ```sh
+    ng serve --open
+    ```
 
-## Running unit tests
+## Building for Production
+The Angular CLI also gives you a simple way to create a production build with:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ng build --prod
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Things I Used
+- [VS Code](https://code.visualstudio.com/) code editor
+- [GitHub Pages](https://pages.github.com/) hosting
+- [Angular CLI](https://cli.angular.io/) create, build, and serve
+- [Angular Material](https://material.angular.io/) material design components
+- [Angular Flex Layout](https://github.com/angular/flex-layout) responsive layout API
+- [FortAwesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome) Font Awesome Angular component
+- [Unsplash](https://unsplash.com/) nice stock photos
+- [Favicon](https://favicon.io/) custom browser images

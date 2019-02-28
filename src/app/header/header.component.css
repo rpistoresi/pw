@@ -1,0 +1,16 @@
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.mode-icon {
+  padding: 0 10px;
+}
+
+.brand {
+  padding: 10px;
+}
+
+.fixed-header {
+  position: fixed;
+  z-index: 2;
+}

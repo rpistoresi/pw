@@ -1,4 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
 body, html {
-    height: 100%
+  /* height: 100% */
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a.mat-button:link, a.mat-button:hover
+a.mat-raised-button:link, a.mat-raised-button:hover {
+  text-decoration: none;
+}
+
+.mat-button:focus, .mat-raised-button:focus,
+.mat-icon-button:focus, .mat-stroked-button:focus {
+  outline: none;
+  border: 0;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }

@@ -1,0 +1,17 @@
+ mat-panel-description {
+  flex: 0 1 auto;
+}
+
+mat-expansion-panel:hover {
+  color: tan;
+}
+
+mat-panel-title:hover {
+  color: tan;
+}
+
+mat-expansion-panel-header, h4, p {
+  /* font-size: 20px; */
+  /* color: tan; */
+  /* font-family: "Comic Sans MS", cursive, sans-serif; */
+}

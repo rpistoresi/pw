@@ -1,0 +1,40 @@
+mat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-footer {
+  margin-top: auto;
+}
+
+mat-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.brand-icons {
+  color: gray;
+  padding: 2px;
+}
+.my-fa:hover {
+  color: green;
+}
+.angular:hover {
+  color: rgb(181,46,49);
+}
+.github:hover {
+  color: #333;
+}
+.html5:hover {
+  color: #e34f26;
+}
+.css3:hover {
+  color: #002561;
+}
+.js:hover {
+  color: #f7df1e;
+  background-color: rgb(50, 51, 48);
+}
+.font-awesome:hover {
+  color: #228ae6;
+}

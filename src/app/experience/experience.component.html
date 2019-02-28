@@ -1,0 +1,20 @@
+<h1 class="section-header" id="experience">Experience</h1>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false"
+                        *ngFor="let job of jobs">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ job.company }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ job.position }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <h3>{{ job.date }}</h3>
+    <p>{{ job.summary }}</p>
+    <!-- <ul>
+      <li *ngFor="let bullet of job.bullets">{{ bullet }}</li>
+    </ul> -->
+  </mat-expansion-panel>
+</mat-accordion>

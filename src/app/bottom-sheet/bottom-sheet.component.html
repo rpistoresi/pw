@@ -1,0 +1,10 @@
+<mat-nav-list #bottomsheet>
+  <a href="../../assets/Pistoresi_Resume.pdf" mat-list-item (click)="openLink($event)" download="Pistoresi_Resume">
+    <span mat-line><mat-icon style="margin-right: 5px">cloud_download</mat-icon>Download</span>
+    <span mat-line>Save to device</span>
+  </a>
+  <a href="../../assets/Pistoresi_Resume.pdf" mat-list-item (click)="openLink($event)" target="_blank">
+    <span mat-line><mat-icon style="margin-right: 5px">open_in_browser</mat-icon>Open in browser</span>
+    <span mat-line>Show in new tab</span>
+  </a>
+</mat-nav-list>
