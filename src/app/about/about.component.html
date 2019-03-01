@@ -3,7 +3,7 @@
   dynamicHeight
   animationDuration="1000ms">
   <mat-tab [label]="tab.label" *ngFor="let tab of tabs">
-    <div class="about-content" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
       <div><img [src]="tab.picture"></div>
       <div *ngIf="tab.default">
         <h3>{{ tab.title }}</h3>

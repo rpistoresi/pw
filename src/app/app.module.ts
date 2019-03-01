@@ -5,29 +5,21 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faSun,
-  faMoon,
-  faCoffee,
-  faLanguage,
-  faDatabase,
-  faCat,
-  faMusic,
-  faTv,
-  faLaptop,
-  faBars,
-  faGlasses } from '@fortawesome/free-solid-svg-icons';
-import {
-  faAngular,
-  faGithub,
-  faCss3,
-  faHtml5,
-  faJs,
-  faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+  faHome, faFolder, faBriefcase, faUserCircle, faEnvelope,
+  faSun, faMoon,
+  faLanguage, faDatabase, faBars, faGlasses, faLaptop,
+  faCoffee, faCat, faTv, faMusic,
+  faFlask, faChalkboardTeacher, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
 
-// Add an icon to the library for convenient access in other components
-library.add( faGlasses, faTv, faLaptop, faBars, faCoffee, faLanguage,
-  faDatabase, faCat, faMusic, faSun, faMoon, faAngular,
-  faGithub, faHtml5, faCss3, faJs, faFontAwesome );
+library.add(
+  faHome, faFolder, faBriefcase, faUserCircle, faEnvelope, // sidenav
+  faSun, faMoon, // light-dark toggle
+  faLanguage, faDatabase, faBars, faGlasses, faLaptop, // skills
+  faCoffee, faCat, faTv, faMusic, // interests
+  faFlask, faChalkboardTeacher, faPowerOff, // experience
+  faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome // brands
+);
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 

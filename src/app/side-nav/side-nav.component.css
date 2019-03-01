@@ -19,18 +19,18 @@
 }
 
 .side-icon {
-  padding-right: 40px;
+  margin-right: 10px;
 }
 
 .spacer {
-  height: 75px;
+  height: 175px;
 }
 
 .extra-margins {
   margin: 10px 20px;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 601px) {
   .extra-margins {
     margin: 10px 100px;
   }

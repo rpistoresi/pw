@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent implements OnInit {
-  panelOpenState = false;
+export class ExperienceComponent {
   jobs = [
     {
       company: 'Meridian Valley Lab',
       position: 'Software Developer',
+      icon: 'flask',
       summary: `One of two developers responsible for the design and creation
         of in-house software solutions for high throughput diagnostics laboratory.
         Collaborate across the entire company including scientists, technicians,
@@ -26,6 +26,7 @@ export class ExperienceComponent implements OnInit {
     {
       company: 'University of Nevada, Reno',
       position: 'Teaching Assistant',
+      icon: 'chalkboard-teacher',
       summary: `Prepare key and grade homework and exams for
         Reliability & Security of Computing Systems course`,
       bullets: [
@@ -36,7 +37,8 @@ export class ExperienceComponent implements OnInit {
       date: '02/2017- 05/2017' },
     {
       company: 'NV Energy',
-      position: 'Engineering and IT, Student Intern',
+      position: 'Engineering & IT Internship',
+      icon: 'power-off',
       summary: `Developed website for facile document retrieval for department\
        and maintained Vegetation Department database`,
       bullets: [
@@ -46,10 +48,20 @@ export class ExperienceComponent implements OnInit {
       ],
       date: '06/2015 - 06/2017' }
   ];
+  step = 0;
 
   constructor() { }
 
-  ngOnInit() {
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
   }
 
 }

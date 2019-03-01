@@ -12,12 +12,11 @@
       <p>{{ project.content }}</p>
     </mat-card-content>
     <mat-card-footer fxLayoutAlign="end">
-      <fa-icon
-        class="brand-icons"
-        size="lg"
-        [ngClass]="action.icon"
-        [icon]="[action.prefix, action.icon]"
-        *ngFor="let action of project.actions"></fa-icon>
+      <fa-icon class="brand-icons"
+               size="lg"
+               [ngClass]="action.icon"
+               [icon]="[action.prefix, action.icon]"
+               *ngFor="let action of project.actions"></fa-icon>
     </mat-card-footer>
   </mat-card>
 </div>

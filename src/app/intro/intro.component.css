@@ -1,10 +1,11 @@
 .pic {
+  display: flex;
   height: 100vh;
+  border-radius: 10px;
   background-image: url('../../assets/img/320x240.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding-right: 30px;
   text-align: center;
   text-shadow:
     -1px -1px 0 #000,
