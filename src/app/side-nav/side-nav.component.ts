@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit, Input, ElementRef } from '@angular/core';
+import { Component, Input, ViewChild, OnInit, ElementRef, HostListener } from '@angular/core';
 import { SidenavService } from './sidenav.service';
 import { MatSidenav } from '@angular/material';
 
@@ -17,12 +17,36 @@ export class SideNavComponent implements OnInit {
     { label: 'Contact', icon: 'envelope', ref: 'contact' }
   ];
 
-  @ViewChild('sidenav') public sidenav: MatSidenav;
+  state = false;
+  scrollingDown = false;
+  previousScrollPosition = 0;
 
-  constructor(private sidenavService: SidenavService) {	}
+  @ViewChild('sidenav') public sidenav: MatSidenav;
+  @ViewChild('divide', {read: ElementRef}) divide: ElementRef;
+
+  constructor(private sidenavService: SidenavService, public el: ElementRef) {	}
 
   ngOnInit(): void {
     this.sidenavService.setSidenav(this.sidenav);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    const componentPosition = this.divide.nativeElement.offsetTop;
+    const scrollPosition = window.pageYOffset;
+
+    if (scrollPosition >= componentPosition - 32) {
+      this.state = true;
+    } else {
+      this.state = false;
+    }
+
+    if (this.previousScrollPosition < scrollPosition) {
+      this.scrollingDown = true;
+    } else if (this.previousScrollPosition > scrollPosition) {
+      this.scrollingDown = false;
+    }
+    this.previousScrollPosition = scrollPosition;
   }
 
   closeSidenav() {

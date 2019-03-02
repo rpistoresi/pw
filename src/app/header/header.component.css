@@ -13,4 +13,7 @@
 .fixed-header {
   position: fixed;
   z-index: 2;
+  background-color: transparent;
+  transition: top 0.5s;
+  top: 0;
 }

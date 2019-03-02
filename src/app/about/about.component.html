@@ -1,9 +1,9 @@
-<h1 class="section-header" id="about">About</h1>
+<h1 class="section-header">About</h1>
 <mat-tab-group
   dynamicHeight
   animationDuration="1000ms">
   <mat-tab [label]="tab.label" *ngFor="let tab of tabs">
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+    <div class="taby" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
       <div><img [src]="tab.picture"></div>
       <div *ngIf="tab.default">
         <h3>{{ tab.title }}</h3>
@@ -12,7 +12,7 @@
       </div>
       <mat-list fxFlex *ngIf="!tab.default">
         <mat-list-item class="mat-list-item-word-wrap" *ngFor="let item of tab.list">
-          <fa-icon mat-list-icon size="md" [icon]="['fas', item.icon]"></fa-icon>
+          <fa-icon mat-list-icon [icon]="['fas', item.icon]" [fixedWidth]="true" size="md"></fa-icon>
           <h4 mat-line>{{ item.item }}</h4>
         </mat-list-item>
       </mat-list>

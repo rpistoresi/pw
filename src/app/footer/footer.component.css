@@ -7,7 +7,7 @@
 }
 
 .footer-content a:hover {
-  color: white;
+  color: inherit;
 }
 
 .copyright {

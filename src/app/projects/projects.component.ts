@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
         { prefix: 'fab', icon: 'js' },
         { prefix: 'fab', icon: 'font-awesome' }
       ],
-      url: '../../assets/img/modern.jpg'
+      url: '../../assets/img/kittens.jpg'
     },
     {
       title: 'Parallelizing Mandelbrot',

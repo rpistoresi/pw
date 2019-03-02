@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { SidenavService } from '../side-nav/sidenav.service';
 import { MatBottomSheet } from '@angular/material';
 import { BottomSheetComponent } from '../bottom-sheet/bottom-sheet.component';
@@ -9,7 +9,7 @@ import { BottomSheetComponent } from '../bottom-sheet/bottom-sheet.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  darkMode = true;
+
   navItems = [
     { label: 'Home' },
     { label: 'About' },
@@ -18,7 +18,13 @@ export class HeaderComponent implements OnInit {
     { label: 'Resume' }
   ];
 
-  constructor(private sidenav: SidenavService, private bottomSheet: MatBottomSheet) { }
+  darkMode = true;
+  @Input() pastIntro = false;
+  @Input() scrollUp = true;
+
+  constructor(private sidenav: SidenavService,
+    private bottomSheet: MatBottomSheet,
+    public el: ElementRef) { }
 
   ngOnInit() {
   }
@@ -32,7 +38,7 @@ export class HeaderComponent implements OnInit {
     this.sidenav.close();
   }
 
-  openBottomSheet(el: HTMLElement) {
+  openBottomSheet() {
     this.bottomSheet.open(BottomSheetComponent);
     this.sidenav.close();
   }

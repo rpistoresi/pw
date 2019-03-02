@@ -1,26 +1,8 @@
 import { Component } from '@angular/core';
-import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  animations: [
-    trigger('listAnimation', [
-      transition('* => *', [ // each time the binding value changes
-        // query(':leave', [
-        //   stagger(100, [
-        //     animate('0s', style({ opacity: 0 }))
-        //   ])
-        // ], { optional: true }),
-        query(':enter', [
-          style({ opacity: 0 }),
-          stagger(200, [
-            animate('0.6s', style({ opacity: 1 }))
-          ])
-        ], { optional: true })
-      ])
-    ])
-  ],
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
@@ -30,7 +12,7 @@ export class AboutComponent {
       default: true,
       label: 'Overview',
       title: 'Hi, I\'m Ray!',
-      picture: '../../assets/img/profile-pic.jpg',
+      picture: '../../assets/img/me.jpeg',
       picLeft: true,
       content1: `I work as software engineer based in Seattle, WA and enjoys,
        making solutions using technology.`,

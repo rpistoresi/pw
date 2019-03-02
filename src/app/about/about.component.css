@@ -1,5 +1,9 @@
 mat-list-item:hover fa-icon, mat-list-item:hover h4, h3 {
-  color: tan;
+  color: rgb(148, 114, 69);
+}
+
+p {
+  font-size: 18px;
 }
 
 img {

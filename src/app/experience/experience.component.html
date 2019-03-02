@@ -1,20 +1,20 @@
 <h1 class="section-header" id="experience">Experience</h1>
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let job of jobs; let i = index"
+  <mat-expansion-panel *ngFor="let job of jobs; let i=index"
                        [expanded]="step === i"
                        (opened)="setStep(i)"
                        hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>{{ jobs[i]?.position }}</mat-panel-title>
       <mat-panel-description>{{ jobs[i]?.company }}</mat-panel-description>
-      <fa-icon [icon]="['fas',jobs[i].icon]"></fa-icon>
+      <fa-icon [icon]="['fas',jobs[i].icon]" [fixedWidth]="true" size="md"></fa-icon>
     </mat-expansion-panel-header>
     <h3>{{ jobs[i]?.date }}</h3>
     <p>{{ jobs[i]?.summary }}</p>
     <mat-action-row>
-      <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
-      <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
+      <span fxFlex="80%" fxLayoutAlign="center"></span>
+      <button mat-button (click)="prevStep()" fxFlex="10%" color="warn">Previous</button>
+      <button mat-button (click)="nextStep()" fxFlex="10%" color="accent">Next</button>
     </mat-action-row>
-
   </mat-expansion-panel>
 </mat-accordion>

@@ -7,18 +7,18 @@
 @include mat-core();
 
 // Define the default theme (same as the example above).
-$custom-app-primary: mat-palette($mat-brown, 500);
-$custom-app-accent:  mat-palette($mat-cyan, 800);
-$custom-app-warn: mat-palette($mat-red);
+$custom-app-primary: mat-palette($mat-grey, 200);
+$custom-app-accent:  mat-palette($mat-green, 900);
+$custom-app-warn:    mat-palette($mat-pink, 700);
 $custom-app-theme:   mat-light-theme($custom-app-primary, $custom-app-accent, $custom-app-warn);
 
 // Include the default theme styles.
 @include angular-material-theme($custom-app-theme);
 
 // Define an alternate dark theme.
-$dark-primary: mat-palette($mat-blue-grey, 800);
-$dark-accent:  mat-palette($mat-deep-orange, 800);
-$dark-warn:    mat-palette($mat-red);
+$dark-primary: mat-palette($mat-grey, 900);
+$dark-accent:  mat-palette($mat-deep-orange, 600);
+$dark-warn:    mat-palette($mat-light-blue, 500);
 $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
 // Include the alternative theme styles inside of a block with a CSS class. You can make this

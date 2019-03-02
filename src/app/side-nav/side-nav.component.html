@@ -1,13 +1,6 @@
 <div [class.custom-dark-theme]="header.darkMode">
-
-  <!-- Sticky Header -->
-  <app-header #header></app-header>
-
-  <!-- Everything wrapped in sidenav container -->
   <mat-sidenav-container fxFlexFill class="side-container">
     <mat-sidenav #sidenav fxLayout="column" class="sidenav" position="start">
-
-      <!-- Sidenav Buttons -->
       <div fxLayout="column" *ngFor="let item of navItems">
         <button mat-button
                 class="side-item"
@@ -15,28 +8,28 @@
                 fxLayoutAlign="start">
           <span class="side-btn">
             <fa-icon class="side-icon"
-                     [icon]="['fas',item.icon]"
-                     [fixedWidth]="true" size="lg">
-            </fa-icon>{{ item.label }}
-          </span>
+                    [icon]="['fas',item.icon]"
+                    [fixedWidth]="true"
+                    size="lg">
+            </fa-icon>{{ item.label }}</span>
         </button>
       </div>
     </mat-sidenav>
-
-    <!-- MAIN APP CONTENTS -->
     <mat-sidenav-content>
+      <app-header #header [scrollUp]="scrollingDown" [pastIntro]="state"></app-header>
       <div class="extra-margins">
-        <div #intro></div>
         <app-intro></app-intro>
-        <div #about class="spacer"></div>
-        <app-about></app-about>
-        <div #experience class="spacer"></div>
-        <app-experience></app-experience>
-        <div #projects class="spacer"></div>
-        <app-projects></app-projects>
-        <div #contact class="spacer"></div>
-        <app-contact></app-contact>
-        <div class="spacer"></div>
+        <div #divide class="edges">
+          <div class="spacer"></div>
+          <app-about></app-about>
+          <div class="spacer"></div>
+          <app-experience></app-experience>
+          <div class="spacer"></div>
+          <app-projects></app-projects>
+          <div class="spacer"></div>
+          <app-contact></app-contact>
+          <div class="spacer"></div>
+        </div>
       </div>
       <app-footer></app-footer>
     </mat-sidenav-content>

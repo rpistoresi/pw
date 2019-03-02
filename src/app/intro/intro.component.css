@@ -1,29 +1,31 @@
 .pic {
-  display: flex;
   height: 100vh;
-  border-radius: 10px;
-  background-image: url('../../assets/img/320x240.jpeg');
-  background-repeat: no-repeat;
+  background-image: url('../../assets/img/bw.jpg');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
-  color: white;
+  background-position: center;
   text-align: center;
-  text-shadow:
+  /* text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;
+    1px 1px 0 #000; */
 }
 
 .name {
-  color: tan;
+  color: rgb(148, 114, 69);
   font-size: 48px;
 }
 
 .career {
+  color: lightgray;
   font-size: 24px;
 }
 
 .addict {
-  color: darkgray;
-  font-size: 14px;
+  color: rgb(148, 114, 69);
+  font-size: 12px;
 }
