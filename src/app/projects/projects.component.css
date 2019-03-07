@@ -1,21 +1,20 @@
-mat-card {
-  display: flex;
-  flex-direction: column;
-}
-
-mat-card-footer {
-  margin-top: auto;
-}
-
 mat-card img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  border-width: 1px;
+}
+
+.project-card {
+  padding: 5px;
 }
 
 .brand-icons {
   color: gray;
-  padding: 2px;
+  padding: 3px;
+  font-size: 18px;
 }
+
 .my-fa:hover {
   color: green;
 }
@@ -37,4 +36,8 @@ mat-card img {
 }
 .font-awesome:hover {
   color: #228ae6;
+}
+
+.docker:hover {
+  color: #0db7ed;
 }

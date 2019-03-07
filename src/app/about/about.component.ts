@@ -17,7 +17,7 @@ export class AboutComponent {
       content1: `I work as software engineer based in Seattle, WA and enjoys,
        making solutions using technology.`,
       content2: `Quickly after graduating from the Unversity of Nevada, Reno,
-        I moved to the PNW with my wife and started working as a developer.`,
+        I moved to the PNW with my wife and started working as a full stack developer.`,
       list: []
     },
     {

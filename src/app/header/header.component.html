@@ -9,12 +9,14 @@
   <span class="brand">RP</span>
   <span class="fill-space"></span>
 
-  <!-- LIGHT/DARK MODE -->
+  <!-- RESUME BUTTON -->
   <button #resume mat-stroked-button (click)="openBottomSheet()" color="accent">RESUME</button>
+
+  <!-- LIGHT/DARK MODE -->
   <span class="mode-icon"><fa-icon size="md" [icon]="['fas', 'sun']"></fa-icon></span>
   <mat-slide-toggle [checked]="darkMode"
                     (dragChange)="toggleMode()"
                     (toggleChange)="toggleMode()"
-                    color="accent"></mat-slide-toggle>
+                    color="warn"></mat-slide-toggle>
   <span class="mode-icon"><fa-icon size="md" [icon]="['fas', 'moon']"></fa-icon></span>
 </mat-toolbar>

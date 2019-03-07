@@ -1,17 +1,17 @@
-mat-expansion-panel-header, h4, p {
-  /* font-size: 11px; */
-}
-
-@media (min-width: 601px) {
-  mat-expansion-panel-header, h4, p {
-    font-size: 15px;
-  }
-}
-
 mat-panel-title:hover, fa-icon:hover {
   color: rgb(148, 114, 69);
 }
 
 mat-panel-description {
   flex: 0 1 auto;
+}
+
+mat-expansion-panel-header, h4, p {
+  font-size: 11px;
+}
+
+@media (min-width: 600px) {
+  mat-expansion-panel-header, h4, p {
+    font-size: 15px;
+  }
 }

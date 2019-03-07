@@ -3,19 +3,21 @@
   dynamicHeight
   animationDuration="1000ms">
   <mat-tab [label]="tab.label" *ngFor="let tab of tabs">
-    <div class="taby" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+    <div class="taby" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
       <div><img [src]="tab.picture"></div>
       <div *ngIf="tab.default">
         <h3>{{ tab.title }}</h3>
         <p>{{ tab.content1 }}</p>
         <p>{{ tab.content2 }}</p>
       </div>
-      <mat-list fxFlex *ngIf="!tab.default">
-        <mat-list-item class="mat-list-item-word-wrap" *ngFor="let item of tab.list">
-          <fa-icon mat-list-icon [icon]="['fas', item.icon]" [fixedWidth]="true" size="md"></fa-icon>
-          <h4 mat-line>{{ item.item }}</h4>
-        </mat-list-item>
-      </mat-list>
+      <div>
+        <mat-list fxFlex *ngIf="!tab.default">
+          <mat-list-item class="mat-list-item-word-wrap" *ngFor="let item of tab.list">
+            <fa-icon mat-list-icon [icon]="['fas', item.icon]" [fixedWidth]="true" size="md"></fa-icon>
+            <h4 mat-line>{{ item.item }}</h4>
+          </mat-list-item>
+        </mat-list>
+      </div>
     </div>
   </mat-tab>
 </mat-tab-group>

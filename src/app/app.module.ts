@@ -10,7 +10,7 @@ import {
   faLanguage, faDatabase, faBars, faGlasses, faLaptop,
   faCoffee, faCat, faTv, faMusic,
   faFlask, faChalkboardTeacher, faPowerOff } from '@fortawesome/free-solid-svg-icons';
-import { faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
   faHome, faFolder, faBriefcase, faUserCircle, faEnvelope, // sidenav
@@ -18,7 +18,7 @@ library.add(
   faLanguage, faDatabase, faBars, faGlasses, faLaptop, // skills
   faCoffee, faCat, faTv, faMusic, // interests
   faFlask, faChalkboardTeacher, faPowerOff, // experience
-  faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome // brands
+  faAngular, faGithub, faCss3, faHtml5, faJs, faFontAwesome, faDocker // brands
 );
 
 import { FlexLayoutModule } from '@angular/flex-layout';

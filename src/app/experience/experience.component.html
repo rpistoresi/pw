@@ -6,10 +6,11 @@
                        hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>{{ jobs[i]?.position }}</mat-panel-title>
-      <mat-panel-description>{{ jobs[i]?.company }}</mat-panel-description>
+      <mat-panel-description>{{ jobs[i]?.acronym }}</mat-panel-description>
       <fa-icon [icon]="['fas',jobs[i].icon]" [fixedWidth]="true" size="md"></fa-icon>
     </mat-expansion-panel-header>
-    <h3>{{ jobs[i]?.date }}</h3>
+    <p>{{ jobs[i]?.company }}</p>
+    <h4>{{ jobs[i]?.date }}</h4>
     <p>{{ jobs[i]?.summary }}</p>
     <mat-action-row>
       <span fxFlex="80%" fxLayoutAlign="center"></span>

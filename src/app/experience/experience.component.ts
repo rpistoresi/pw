@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   jobs = [
     {
+      acronym: 'MVL',
       company: 'Meridian Valley Lab',
       position: 'Software Developer',
       icon: 'flask',
@@ -24,6 +25,7 @@ export class ExperienceComponent {
       ],
       date: '08/2017 - Present' },
     {
+      acronym: 'UNR',
       company: 'University of Nevada, Reno',
       position: 'Teaching Assistant',
       icon: 'chalkboard-teacher',
@@ -36,6 +38,7 @@ export class ExperienceComponent {
       ],
       date: '02/2017- 05/2017' },
     {
+      acronym: 'NVE',
       company: 'NV Energy',
       position: 'Engineering & IT Internship',
       icon: 'power-off',

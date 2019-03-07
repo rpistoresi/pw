@@ -10,48 +10,47 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
       title: 'ModernNerding',
-      subtitle: 'A gathering place for nerdy couples',
-      content: `Bringing real world experience about living
-                as a couple who enjoys nerdy stuff.`,
+      subtitle: 'A blog about geeky stuff',
+      img: '../../assets/img/kittens.jpg',
+      content: `Exploring current nerdiness.`,
       actions: [
-        { prefix: 'fab', icon: 'angular' },
-        { prefix: 'fab', icon: 'github' },
-        { prefix: 'fab', icon: 'html5' },
-        { prefix: 'fab', icon: 'css3' },
-        { prefix: 'fab', icon: 'js' },
-        { prefix: 'fab', icon: 'font-awesome' }
+        { prefix: 'fab', icon: 'angular', url: 'https://angular.io/' },
+        { prefix: 'fab', icon: 'github', url: 'https://github.com/' },
+        { prefix: 'fab', icon: 'font-awesome', url: 'https://fontawesome.com/' },
+        { prefix: 'fab', icon: 'docker', url: 'https://docker.com/' }
       ],
-      url: '../../assets/img/kittens.jpg'
     },
     {
       title: 'Parallelizing Mandelbrot',
       subtitle: 'Static and dynamic load balancing',
+      img: '../../assets/img/fractal.jpg',
       content: `This project uses the Message Passaging Interface
                 (MPI) to complete the Mandelbrot fractal.`,
-      actions: [ { prefix: 'fab', icon: 'github' } ],
-      url: '../../assets/img/fractal.jpg'
+      actions: [ { prefix: 'fab', icon: 'github', url: 'https://github.com/' } ],
     },
     {
       title: 'Personal Website',
       subtitle: 'Intro to Angular 7',
-      content: `First iteration of my personal website using Angular 7.
-                This was a fun way to build a single page web application
-                using a modern framework.`,
+      img: '../../assets/img/dark.jpg',
+      content: `First iteration of my personal website using Angular 7.`,
       actions: [
-        { prefix: 'fab', icon: 'angular' },
-        { prefix: 'fab', icon: 'github' },
-        { prefix: 'fab', icon: 'html5' },
-        { prefix: 'fab', icon: 'css3' },
-        { prefix: 'fab', icon: 'js' },
-        { prefix: 'fab', icon: 'font-awesome' }
+        { prefix: 'fab', icon: 'angular', url: 'https://angular.io/' },
+        { prefix: 'fab', icon: 'github', url: 'https://github.com/' },
+        { prefix: 'fab', icon: 'html5', url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/' },
+        { prefix: 'fab', icon: 'css3', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3/' },
+        { prefix: 'fab', icon: 'js', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/' },
+        { prefix: 'fab', icon: 'font-awesome', url: 'https://fontawesome.com/' }
       ],
-      url: '../../assets/img/dark.jpg'
     }
   ];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  doSomething() {
+    console.log('clicked');
   }
 
 }
