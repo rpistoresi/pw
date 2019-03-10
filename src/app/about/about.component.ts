@@ -13,11 +13,9 @@ export class AboutComponent {
       label: 'Overview',
       title: 'Hi, I\'m Ray!',
       picture: '../../assets/img/me.jpeg',
-      picLeft: true,
-      content1: `I work as software engineer based in Seattle, WA and enjoys,
-       making solutions using technology.`,
-      content2: `Quickly after graduating from the Unversity of Nevada, Reno,
-        I moved to the PNW with my wife and started working as a full stack developer.`,
+      content1: `I am a software engineer that enjoys crafting solutions using technology.`,
+      content2: `Based in Seattle, WA with my wife I enjoy working as a full stack developer,
+        drinking far too much coffee, and spoiling our cat.`,
       list: []
     },
     {
@@ -25,27 +23,21 @@ export class AboutComponent {
       label: 'Skills',
       title: 'Things I\'ve Used',
       picture: '../../assets/img/programming-code.jpg',
-      picLeft: false,
       list: [
         {
           item: 'Languages: C/C++, VBA, T-SQL, HTML, CSS, TypeScript, JavaScript, Python',
-          skill: 'hello',
           icon: 'language' },
         {
           item: 'Databases: MS SQL Server, MySQL',
-          skill: 'hello',
           icon: 'database' },
         {
           item: 'Skills: AWS, Git, Docker, Trello, MS Access, Slurm, MPI, WordPress',
-          skill: 'hello',
           icon: 'glasses' },
         {
           item: 'Stacks: MEAN, LAMP, WAMP',
-          skill: 'hello',
           icon: 'bars' },
         {
           item: 'Platforms: Linux, Windows, Mac',
-          skill: 'hello',
           icon: 'laptop'}
       ]
     },

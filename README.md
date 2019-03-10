@@ -35,5 +35,5 @@ ng build --prod
 - [Angular Material](https://material.angular.io/) material design components
 - [Angular Flex Layout](https://github.com/angular/flex-layout) responsive layout API
 - [FortAwesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome) Font Awesome Angular component
-- [Unsplash](https://unsplash.com/) nice stock photos
+- [Pixabay](https://pixabay.com/) nice stock photos
 - [Favicon](https://favicon.io/) custom browser images

@@ -1,12 +1,17 @@
+.project-card {
+  padding: 5px;
+}
+
 mat-card img {
   width: 100px;
   height: 100px;
-  border-radius: 25%;
-  border-width: 1px;
+  border-radius: 5px;
+  justify-content: center;
 }
 
-.project-card {
-  padding: 5px;
+mat-card-header:hover {
+  color: rgb(148, 114, 69);
+  cursor: pointer;
 }
 
 .brand-icons {
@@ -15,7 +20,11 @@ mat-card img {
   font-size: 18px;
 }
 
-.my-fa:hover {
+.brand-icons:hover {
+  color: rgb(148, 114, 69);
+}
+
+/* .my-fa:hover {
   color: green;
 }
 .angular:hover {
@@ -40,4 +49,4 @@ mat-card img {
 
 .docker:hover {
   color: #0db7ed;
-}
+} */

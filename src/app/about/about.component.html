@@ -3,7 +3,7 @@
   dynamicHeight
   animationDuration="1000ms">
   <mat-tab [label]="tab.label" *ngFor="let tab of tabs">
-    <div class="taby" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+    <div class="taby" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
       <div><img [src]="tab.picture"></div>
       <div *ngIf="tab.default">
         <h3>{{ tab.title }}</h3>
@@ -21,18 +21,3 @@
     </div>
   </mat-tab>
 </mat-tab-group>
-
-<!-- <h2>Angular Animations In Lists</h2>
-<button (click)="toggle()">Show / Hide Items</button>
-<hr />
-<code><a href="https://angular.io/api/animations/stagger">
-stagger</a> </code> an animation-specific function that is designed to be used inside of Angular's animation DSL language. It is designed to be used inside of an animation query() and works by issuing a timing gap between after each queried item is animated.
-
-<hr />
-<div [@listAnimation]="items.length"
-    (@listAnimation.start)="logAnimation($event)"
-    (@listAnimation.done)="logAnimation($event)">
-  <div *ngFor="let item of items; let i=index">
-    <div>{{ item }}</div>
-  </div>
-</div> -->
