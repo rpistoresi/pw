@@ -9,7 +9,7 @@
 }
 
 .spacer {
-  height: 175px;
+  height: 200px;
 }
 
 .sidenav {
@@ -24,7 +24,6 @@
 
 .side-container {
   top: 0px;
-  /* padding-top: 64px; */
 }
 
 .side-item {

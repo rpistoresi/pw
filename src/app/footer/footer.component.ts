@@ -19,29 +19,4 @@ export class FooterComponent {
     this.bottomSheet.open(BottomSheetComponent);
   }
 
-  openLink(event: MouseEvent): void {
-    this.bottomSheet.dismiss();
-    // event.preventDefault();
-  }
 }
-
-
-
-// @Component({
-//   selector: 'app-bottom-sheet',
-//   templateUrl: 'resume-bottom-sheet.html',
-// })
-// export class BottomSheetComponent {
-//   constructor(private bottomSheetRef: MatBottomSheetRef<BottomSheetComponent>) {}
-
-//   openLink(event: MouseEvent): void {
-//     this.bottomSheetRef.dismiss();
-//     // event.preventDefault();
-//   }
-// }
-
-// constructor(private bottomSheet: MatBottomSheet) {}
-
-// openBottomSheet(): void {
-//   this.bottomSheet.open(BottomSheetComponent);
-// }

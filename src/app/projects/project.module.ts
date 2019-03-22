@@ -3,6 +3,6 @@ export class Project {
   subtitle: string;
   img: { src: string, alt: string };
   content: string;
-  actions: { prefix: string, icon: string, url: string }[];
+  tools: { prefix: string, icon: string, url: string }[];
   url: string;
 }

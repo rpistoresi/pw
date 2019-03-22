@@ -1,4 +1,12 @@
-mat-panel-title:hover, fa-icon:hover {
+fa-icon:hover {
+  color: rgb(148, 114, 69);
+}
+
+h3 {
+  color: rgb(148, 114, 69);
+}
+
+h4 {
   color: rgb(148, 114, 69);
 }
 

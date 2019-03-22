@@ -9,8 +9,15 @@ mat-card img {
   justify-content: center;
 }
 
+mat-card-header {
+  padding-right: 10px;
+}
+
 mat-card-header:hover {
   color: rgb(148, 114, 69);
+}
+
+.hovering {
   cursor: pointer;
 }
 
@@ -23,30 +30,3 @@ mat-card-header:hover {
 .brand-icons:hover {
   color: rgb(148, 114, 69);
 }
-
-/* .my-fa:hover {
-  color: green;
-}
-.angular:hover {
-  color: rgb(181,46,49);
-}
-.github:hover {
-  color: #333;
-}
-.html5:hover {
-  color: #e34f26;
-}
-.css3:hover {
-  color: #002561;
-}
-.js:hover {
-  color: #f7df1e;
-  background-color: rgb(50, 51, 48);
-}
-.font-awesome:hover {
-  color: #228ae6;
-}
-
-.docker:hover {
-  color: #0db7ed;
-} */

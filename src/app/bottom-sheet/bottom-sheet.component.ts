@@ -14,8 +14,7 @@ export class BottomSheetComponent {
 
   constructor(private bottomSheetRef: MatBottomSheetRef<BottomSheetComponent>) {}
 
-  openLink(event: MouseEvent): void {
+  openLink(): void {
     this.bottomSheetRef.dismiss();
-    // event.preventDefault();
   }
 }

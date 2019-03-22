@@ -1,8 +1,12 @@
 <div [class.custom-dark-theme]="header.darkMode">
   <mat-sidenav-container fxFlexFill class="side-container">
+
+    <!-- SIDENAV -->
     <mat-sidenav #sidenav fxLayout="column" class="sidenav" position="start">
       <div fxLayout="column" *ngFor="let item of navItems">
         <button mat-button
+                routerLink="/"
+                [fragment]="item.ref"
                 class="side-item"
                 (click)="closeSidenav()"
                 fxLayoutAlign="start">
@@ -15,8 +19,10 @@
         </button>
       </div>
     </mat-sidenav>
+
+    <!-- MAIN CONTENT -->
     <mat-sidenav-content>
-      <app-header #header [scrollUp]="scrollingDown" [pastIntro]="state"></app-header>
+      <app-header #header [scrollDown]="scrollingDown" [pastIntro]="passedIntro"></app-header>
       <div class="extra-margins">
         <app-intro></app-intro>
         <div #divide class="edges">

@@ -9,7 +9,6 @@ import { BottomSheetComponent } from '../bottom-sheet/bottom-sheet.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   navItems = [
     { label: 'Home' },
     { label: 'About' },
@@ -17,10 +16,9 @@ export class HeaderComponent implements OnInit {
     { label: 'Contact' },
     { label: 'Resume' }
   ];
-
   darkMode = true;
   @Input() pastIntro = false;
-  @Input() scrollUp = true;
+  @Input() scrollDown = true;
 
   constructor(private sidenav: SidenavService,
     private bottomSheet: MatBottomSheet,

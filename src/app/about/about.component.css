@@ -1,6 +1,10 @@
-.taby {
+.tab-row {
   margin-top: 10px;
   text-align: left;
+}
+
+.featured {
+  margin-left: 15px;
 }
 
 mat-list-item:hover fa-icon, mat-list-item:hover h4, h3 {
@@ -40,6 +44,7 @@ img {
   height: initial !important;
   padding: 5px 0;
 }
+
 .mat-list-item-word-wrap .mat-line {
   word-wrap: break-word !important;
   white-space: pre-wrap !important;

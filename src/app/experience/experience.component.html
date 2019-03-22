@@ -1,21 +1,21 @@
 <h1 class="section-header" id="experience">Experience</h1>
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let job of jobs; let i=index"
+  <mat-expansion-panel *ngFor="let experience of experiences; let i=index"
                        [expanded]="step === i"
                        (opened)="setStep(i)"
                        hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title>{{ jobs[i]?.position }}</mat-panel-title>
-      <mat-panel-description>{{ jobs[i]?.acronym }}</mat-panel-description>
-      <fa-icon [icon]="['fas',jobs[i].icon]" [fixedWidth]="true" size="md"></fa-icon>
+      <mat-panel-title>{{ experiences[i]?.position }}</mat-panel-title>
+      <mat-panel-description>{{ experiences[i]?.acronym }}</mat-panel-description>
+      <fa-icon [icon]="['fas',experiences[i].icon]" [fixedWidth]="true" size="md"></fa-icon>
     </mat-expansion-panel-header>
-    <p>{{ jobs[i]?.company }}</p>
-    <h4>{{ jobs[i]?.date }}</h4>
-    <p>{{ jobs[i]?.summary }}</p>
+    <h3>{{ experiences[i]?.company }}</h3>
+    <h4>{{ experiences[i]?.date }}</h4>
+    <p>{{ experiences[i]?.summary }}</p>
     <mat-action-row>
       <span fxFlex="80%" fxLayoutAlign="center"></span>
-      <button mat-button (click)="prevStep()" fxFlex="10%" color="warn">Previous</button>
-      <button mat-button (click)="nextStep()" fxFlex="10%" color="accent">Next</button>
+      <button mat-button *ngIf="step" (click)="prevStep()" fxFlex="10%" color="warn">Previous</button>
+      <button mat-button *ngIf="i !== 2" (click)="nextStep()" fxFlex="10%" color="accent">Next</button>
     </mat-action-row>
   </mat-expansion-panel>
 </mat-accordion>

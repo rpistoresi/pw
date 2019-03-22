@@ -1,4 +1,4 @@
-<h1 class="section-header">Projects</h1>
+<h1 class="section-header" id="projects">Projects</h1>
 <div class="project-card"
      id="project"
      fxLayout="row wrap"
@@ -6,23 +6,17 @@
      fxLayoutAlign="start stretch"
      *ngFor="let project of projects">
   <mat-card fxFill>
-      <mat-card-header (click)="openLink(project.url)" style="padding-right:10px">
+      <mat-card-header [class.hovering]="project.url != null" (click)="openLink(project.url)">
+        <img mat-card-avatar [src]="project.img.src" [alt]="project.img.alt">
         <mat-card-title>{{ project.title }}</mat-card-title>
         <mat-card-subtitle>{{ project.content }}</mat-card-subtitle>
-        <span style="flex: 1 1 auto"></span>
-        <img mat-card-avatar [src]="project.img.src" [alt]="project.img.alt">
       </mat-card-header>
-      <!-- <mat-card-content style="margin-top: 10px">
-        <p>{{ project.content }}</p>
-      </mat-card-content> -->
       <mat-card-footer fxLayoutAlign="end">
-        <a [href]="action.url" *ngFor="let action of project.actions" target="_blank">
+        <a [href]="tool.url" *ngFor="let tool of project.tools" target="_blank">
           <fa-icon class="brand-icons"
-                  size="24px"
-                  [ngClass]="action.icon"
-                  [icon]="[action.prefix, action.icon]"></fa-icon></a>
+                   size="24px"
+                   [ngClass]="tool.icon"
+                   [icon]="[tool.prefix, tool.icon]"></fa-icon></a>
       </mat-card-footer>
   </mat-card>
 </div>
-<!-- style="border-color: purple; border-style: solid"
-style="border-color: yellowgreen; border-style: solid" -->

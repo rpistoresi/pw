@@ -1,6 +1,6 @@
 <mat-toolbar class="fixed-header mat-elevation-z10"
-             [ngStyle]="{'top': scrollUp && pastIntro ? '-64px' : '0px',
-                         'color': (pastIntro && !darkMode) ? 'black' : 'white'}">
+             [ngStyle]="{'top': scrollDown && pastIntro ? '-64px' : '0px',
+                         'color': pastIntro && !darkMode ? 'black' : 'white'}">
   <!-- HAMBURGER & BRAND -->
   <div>
     <button mat-icon-button (click)="toggleSidenav()">
