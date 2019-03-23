@@ -5,17 +5,17 @@
     <mat-sidenav #sidenav fxLayout="column" class="sidenav" position="start">
       <div fxLayout="column" *ngFor="let item of navItems">
         <button mat-button
-                routerLink="/"
-                [fragment]="item.ref"
                 class="side-item"
-                (click)="closeSidenav()"
+                (click)="closeSidenav(item.id)"
                 fxLayoutAlign="start">
           <span class="side-btn">
             <fa-icon class="side-icon"
-                    [icon]="['fas',item.icon]"
-                    [fixedWidth]="true"
-                    size="lg">
-            </fa-icon>{{ item.label }}</span>
+                     [icon]="['fas',item.icon]"
+                     [fixedWidth]="true"
+                     size="lg">
+            </fa-icon>
+            {{ item.label }}
+          </span>
         </button>
       </div>
     </mat-sidenav>

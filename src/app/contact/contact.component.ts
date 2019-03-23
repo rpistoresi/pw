@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   url = 'mailto:rpistoresi@nevada.unr.edu';
+  invite = `I am always open to new opportunities and challenges
+    that align with my skills and interests.`;
 
   constructor() { }
 

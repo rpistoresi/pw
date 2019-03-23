@@ -16,7 +16,8 @@ export const TABS = [
     list: [
       {
         item: 'Languages: C/C++, VBA, T-SQL, HTML, CSS, TypeScript, JavaScript, Python',
-        icon: 'language' },
+        icon: 'language'
+      },
       {
         item: 'Databases: MS SQL Server, MySQL',
         icon: 'database' },
@@ -25,10 +26,12 @@ export const TABS = [
         icon: 'glasses' },
       {
         item: 'Stacks: MEAN, LAMP, WAMP',
-        icon: 'bars' },
+        icon: 'bars'
+      },
       {
         item: 'Platforms: Linux, Windows, Mac',
-        icon: 'laptop'}
+        icon: 'laptop'
+      }
     ]
   },
   {

@@ -1,9 +1,15 @@
 <mat-nav-list #bottomsheet>
-  <a href="../../assets/Pistoresi_Resume.pdf" mat-list-item (click)="openLink()" download="Pistoresi_Resume">
+  <a href="../../assets/Pistoresi_Resume.pdf"
+     mat-list-item
+     (click)="dismissBottomSheet()"
+     download="Pistoresi_Resume">
     <span mat-line><mat-icon>cloud_download</mat-icon>Download</span>
     <span mat-line>Save to device</span>
   </a>
-  <a href="../../assets/Pistoresi_Resume.pdf" mat-list-item (click)="openLink($event)" target="_blank">
+  <a href="../../assets/Pistoresi_Resume.pdf"
+     mat-list-item
+     (click)="dismissBottomSheet()"
+     target="_blank">
     <span mat-line><mat-icon>open_in_browser</mat-icon>Open in browser</span>
     <span mat-line>Show in new tab</span>
   </a>

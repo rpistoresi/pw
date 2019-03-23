@@ -14,7 +14,7 @@ export class BottomSheetComponent {
 
   constructor(private bottomSheetRef: MatBottomSheetRef<BottomSheetComponent>) {}
 
-  openLink(): void {
+  dismissBottomSheet(): void {
     this.bottomSheetRef.dismiss();
   }
 }

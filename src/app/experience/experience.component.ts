@@ -8,6 +8,7 @@ import { EXPERIENCES } from './experiences';
 })
 export class ExperienceComponent {
   experiences = EXPERIENCES;
+  last = this.experiences.length - 1;
   step = 0;
 
   constructor() { }

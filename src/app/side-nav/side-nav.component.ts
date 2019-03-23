@@ -5,9 +5,9 @@ import {
   ElementRef,
   HostListener,
   Output } from '@angular/core';
-import { SidenavService } from './sidenav.service';
 import { MatSidenav } from '@angular/material';
-import { ActivatedRoute } from '@angular/router';
+import { SidenavService } from './sidenav.service';
+import { SIDENAV_ITEMS } from './side-nav';
 
 @Component({
   selector: 'app-side-nav',
@@ -16,30 +16,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class SideNavComponent implements OnInit {
-  navItems = [
-    { label: 'Home', icon: 'home', ref: 'home' },
-    { label: 'About', icon: 'user-circle', ref: 'about' },
-    { label: 'Experience', icon: 'laptop', ref: 'experience' },
-    { label: 'Projects', icon: 'folder', ref: 'projects' },
-    { label: 'Contact', icon: 'envelope', ref: 'contact' }
-  ];
+  navItems = SIDENAV_ITEMS;
   previousScrollPosition = 0;
   @Output() passedIntro = false;
   @Output() scrollingDown = false;
   @ViewChild('sidenav') public sidenav: MatSidenav;
   @ViewChild('divide', {read: ElementRef}) divide: ElementRef;
 
-  constructor(private sidenavService: SidenavService, private route: ActivatedRoute) {	}
+  constructor(private sidenavService: SidenavService) {	}
 
   ngOnInit() {
     this.sidenavService.setSidenav(this.sidenav);
-    this.route.fragment.subscribe((fragment: string) => {
-      if (fragment && document.getElementById(fragment) != null) {
-        document.getElementById(fragment).scrollIntoView(
-          { behavior: 'smooth', block: 'start', inline: 'nearest' }
-        );
-      }
-    });
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -47,14 +34,14 @@ export class SideNavComponent implements OnInit {
     const componentPosition = this.divide.nativeElement.offsetTop;
     const scrollPosition = window.pageYOffset;
 
-    // detect passing intro component
+    // check if passed intro component
     if (scrollPosition >= componentPosition - 32) {
       this.passedIntro = true;
     } else {
       this.passedIntro = false;
     }
 
-    // detect scroll direction
+    // get scroll direction (UP/DOWN)
     if (this.previousScrollPosition < scrollPosition) {
       this.scrollingDown = true;
     } else if (this.previousScrollPosition > scrollPosition) {
@@ -63,7 +50,10 @@ export class SideNavComponent implements OnInit {
     this.previousScrollPosition = scrollPosition;
   }
 
-  closeSidenav() {
+  closeSidenav(elementId: string) {
     this.sidenav.toggle();
+    document.getElementById(elementId).scrollIntoView(
+      { behavior: 'smooth', block: 'start', inline: 'nearest' }
+    );
   }
 }

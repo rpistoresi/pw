@@ -36,9 +36,9 @@ import { SidenavService } from './side-nav/sidenav.service';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
-// Icons
+// FA Icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { IconModule } from './shared/shared.module';
+import { IconModule } from './shared/shared-fa-icons.module';
 
 @NgModule({
   declarations: [

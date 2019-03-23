@@ -1,11 +1,9 @@
 <mat-toolbar class="fixed-header mat-elevation-z10"
              [ngStyle]="{'top': scrollDown && pastIntro ? '-64px' : '0px',
-                         'color': pastIntro && !darkMode ? 'black' : 'white'}">
+                        'color': pastIntro && !darkMode ? 'black' : 'white'}">
+
   <!-- HAMBURGER & BRAND -->
-  <div>
-    <button mat-icon-button (click)="toggleSidenav()">
-    <mat-icon>menu</mat-icon></button>
-  </div>
+  <button mat-icon-button (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button>
   <span class="brand">RP</span>
   <span class="fill-space"></span>
 
@@ -17,6 +15,7 @@
   <mat-slide-toggle [checked]="darkMode"
                     (dragChange)="toggleMode()"
                     (toggleChange)="toggleMode()"
-                    color="warn"></mat-slide-toggle>
+                    color="warn">
+  </mat-slide-toggle>
   <span class="mode-icon"><fa-icon size="md" [icon]="['fas', 'moon']"></fa-icon></span>
 </mat-toolbar>

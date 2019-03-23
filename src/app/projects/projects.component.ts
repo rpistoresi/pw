@@ -16,5 +16,4 @@ export class ProjectsComponent {
       window.open(uri, '_blank');
     }
   }
-
 }
