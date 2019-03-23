@@ -14,13 +14,13 @@
       <div>
         <mat-list fxFlex *ngIf="!tab.default">
           <h3>{{ tab.title }}</h3>
-          <mat-list-item class="mat-list-item-word-wrap" *ngFor="let item of tab.list">
+          <mat-list-item class="mat-list-item-word-wrap" *ngFor="let listItem of tab.list">
             <fa-icon mat-list-icon
-                     [icon]="['fas', item.icon]"
+                     [icon]="['fas', listItem.icon]"
                      [fixedWidth]="true"
                      size="md">
             </fa-icon>
-            <h4 mat-line>{{ item.item }}</h4>
+            <h4 mat-line>{{ listItem.item }}</h4>
           </mat-list-item>
         </mat-list>
       </div>

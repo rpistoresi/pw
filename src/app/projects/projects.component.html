@@ -12,7 +12,7 @@
         <mat-card-subtitle>{{ project.content }}</mat-card-subtitle>
       </mat-card-header>
       <hr>
-      <mat-card-footer fxLayoutAlign="end">
+      <mat-card-footer style="margin-right: 2px" fxLayoutAlign="end">
         <a *ngFor="let tool of project.tools"
            (click)="openLink(tool.url)"
            style="cursor: pointer">
