@@ -2,7 +2,7 @@
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <div class="footer-content" *ngFor="let item of footerItems">
-        <a href="item.link" mat-button target="_blank" rel="noreferrer">{{ item.label }}</a>
+        <a href="{{ item.link }}" mat-button target="_blank" rel="noreferrer">{{ item.label }}</a>
       </div>
       <div class="footer-content">
         <button mat-button (click)="openBottomSheet()">Resume</button>
