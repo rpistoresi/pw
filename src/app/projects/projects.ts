@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
       { prefix: 'fab', icon: 'wordpress', url: 'https://wordpress.org/' },
       { prefix: 'fab', icon: 'bitbucket', url: 'https://bitbucket.org/' },
     ],
-    url: 'https://github.com/rpistoresi/ilovereno/'
+    url: 'https://github.com/rpistoresi/ilr/'
   },
   {
     title: 'Parallelizing Mandelbrot',
