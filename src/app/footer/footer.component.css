@@ -1,15 +1,20 @@
 .footer {
   display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mat-toolbar, .mat-toolbar-row {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-content {
   margin: 0 auto;
+  font-size: 10px;
 }
 
 .footer-content a:hover {
   color: inherit;
-}
-
-.copyright {
-  font-size: 10px;
 }

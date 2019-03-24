@@ -1,29 +1,23 @@
 .edges {
   margin: 0 20px;
+  padding: 0;
 }
 
 @media (min-width: 640px) {
   .edges {
     margin: 0 100px;
+    padding: 0;
   }
-}
-
-.spacer {
-  height: 150px;
 }
 
 .sidenav {
   display: flex;
   position: fixed;
   width: 175px;
-  top: 0px;
+  top: 0;
   padding-top: 1rem;
   align-items: center;
   justify-content: center;
-}
-
-.side-container {
-  top: 0px;
 }
 
 .side-item {
@@ -32,4 +26,8 @@
 
 .side-icon {
   margin-right: 10px;
+}
+
+.spacer {
+  height: 125px;
 }

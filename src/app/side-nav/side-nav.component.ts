@@ -3,8 +3,8 @@ import {
   ViewChild,
   OnInit,
   ElementRef,
-  HostListener,
-  Output } from '@angular/core';
+  Output,
+  HostListener } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 import { SidenavService } from './sidenav.service';
 import { SIDENAV_ITEMS } from './side-nav';
