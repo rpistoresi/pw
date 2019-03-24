@@ -1,12 +1,12 @@
 <mat-nav-list #bottomsheet>
-  <a href="../../assets/Pistoresi_Resume.pdf"
+  <a href="{{ resume }}"
      mat-list-item
      (click)="dismissBottomSheet()"
      download="Pistoresi_Resume">
     <span mat-line><mat-icon>cloud_download</mat-icon>Download</span>
     <span mat-line>Save to device</span>
   </a>
-  <a href="../../assets/Pistoresi_Resume.pdf"
+  <a href="{{ resume }}"
      mat-list-item
      (click)="dismissBottomSheet()"
      target="_blank">

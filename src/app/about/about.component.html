@@ -5,9 +5,9 @@
          fxLayout="row"
          fxLayout.xs="column"
          fxLayoutAlign="start center">
-      <div><img [src]="tab.picture"></div>
+      <div><img [src]="tab.picture.path" [alt]="tab.picture.alt"></div>
       <div class="featured" *ngIf="tab.default">
-        <h3>{{ tab.title }}</h3>
+        <h3 mat-button color="warn">{{ tab.title }}</h3>
         <p>{{ tab.content1 }}</p>
         <p>{{ tab.content2 }}</p>
       </div>

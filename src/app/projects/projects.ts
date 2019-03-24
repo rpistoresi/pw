@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'MN',
     img: {
-      src: '../../assets/img/kittens.jpg',
+      src: './assets/img/nerd.jpg',
       alt: 'cute kittens'
     },
     content: `Exploring current nerdiness in blog form. Leveraging Docker to serve
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Personal Website',
     img: {
-      src: '../../assets/img/personal-site.jpg',
+      src: './assets/img/personal-site.jpg',
       alt: 'Raymond Pistoresi website'
     },
     content: `First iteration of my personal website using Angular 7 and hosted on Github Pages.`,
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'I Love Reno',
     img: {
-      src: '../../assets/img/ilovereno.png',
+      src: './assets/img/ilovereno.png',
       alt: 'I Love Reno homepage'
     },
     content: `A custom WordPress site with calendar, business event submission,
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Parallelizing Mandelbrot',
     img: {
-      src: '../../assets/img/fractal.jpg',
+      src: './assets/img/fractal.jpg',
       alt: 'mandelbrol fractal'
     },
     content: `This project implements the Mandelbrot fractal on a cluster

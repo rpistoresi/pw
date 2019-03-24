@@ -15,10 +15,10 @@
   padding-top: 64px;
   padding-left: 10px;
   padding-right: 10px;
+  color: lightgray;
 }
 
 .name {
-  color: rgb(148, 114, 69);
   font-size: 48px;
 }
 
@@ -28,6 +28,5 @@
 }
 
 .addict {
-  color: rgb(148, 114, 69);
   font-size: 12px;
 }

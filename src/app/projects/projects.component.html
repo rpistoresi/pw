@@ -1,6 +1,5 @@
 <h1 class="section-header" id="projects">Projects</h1>
 <div class="project-card"
-     id="project"
      fxLayout="row wrap"
      fxLayout.xs="column"
      fxLayoutAlign="start stretch"
@@ -12,16 +11,12 @@
         <mat-card-subtitle>{{ project.content }}</mat-card-subtitle>
       </mat-card-header>
       <hr>
-      <mat-card-footer style="margin-right: 2px" fxLayoutAlign="end">
-        <a *ngFor="let tool of project.tools"
-           (click)="openLink(tool.url)"
-           style="cursor: pointer">
-          <fa-icon class="brand-icons"
-                   size="24px"
-                   [ngClass]="tool.icon"
-                   [icon]="[tool.prefix, tool.icon]">
-          </fa-icon>
-        </a>
+      <mat-card-footer style="margin-right:2px" fxLayoutAlign="end">
+        <fa-icon *ngFor="let tool of project.tools"
+                  class="brand-icons"
+                  [ngClass]="tool.icon"
+                  [icon]="[tool.prefix, tool.icon]">
+        </fa-icon>
       </mat-card-footer>
   </mat-card>
 </div>

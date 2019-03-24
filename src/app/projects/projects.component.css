@@ -14,7 +14,7 @@ mat-card-header {
 }
 
 mat-card-header:hover {
-  color: rgb(148, 114, 69);
+  color: rgb(8, 169, 233);
 }
 
 .hovering {
@@ -22,11 +22,10 @@ mat-card-header:hover {
 }
 
 .brand-icons {
-  color: gray;
-  padding: 3px;
-  font-size: 18px;
+  padding: 5px;
+  font-size: 24px;
 }
 
 .brand-icons:hover {
-  color: rgb(148, 114, 69);
+  color: rgb(8, 169, 233);
 }

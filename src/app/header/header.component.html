@@ -3,19 +3,24 @@
                         'color': pastIntro && !darkMode ? 'black' : 'white'}">
 
   <!-- HAMBURGER & BRAND -->
-  <button mat-icon-button (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button>
+  <button mat-icon-button (click)="toggleSidenav()" aria-label="menu"><mat-icon>menu</mat-icon></button>
   <span class="brand">RP</span>
   <span class="fill-space"></span>
 
   <!-- RESUME BUTTON -->
-  <button #resume mat-stroked-button (click)="openBottomSheet()" color="accent">RESUME</button>
+  <button #resume
+          mat-stroked-button
+          (click)="openBottomSheet()"
+          color="accent"
+          aria-label="resume">RESUME</button>
 
   <!-- LIGHT/DARK MODE -->
   <span class="mode-icon"><fa-icon size="md" [icon]="['fas', 'sun']"></fa-icon></span>
   <mat-slide-toggle [checked]="darkMode"
                     (dragChange)="toggleMode()"
                     (toggleChange)="toggleMode()"
+                    aria-label="Mode"
                     color="warn">
   </mat-slide-toggle>
-  <span class="mode-icon"><fa-icon size="md" [icon]="['fas', 'moon']"></fa-icon></span>
+  <span class="mode-icon"><fa-icon id="Mode" size="md" [icon]="['fas', 'moon']"></fa-icon></span>
 </mat-toolbar>

@@ -1,21 +1,15 @@
 fa-icon:hover {
-  color: rgb(148, 114, 69);
+  color: rgb(8, 169, 233);
 }
 
 h3, h4 {
-  color: rgb(148, 114, 69);
+  color: rgb(8, 169, 233);
+}
+
+p {
+  font-size: 16px;
 }
 
 mat-panel-description {
   flex: 0 1 auto;
-}
-
-mat-expansion-panel-header, h4, p {
-  font-size: 11px;
-}
-
-@media (min-width: 640px) {
-  mat-expansion-panel-header, h4, p {
-    font-size: 15px;
-  }
 }

@@ -14,9 +14,9 @@
     <p>{{ experiences[i].summary }}</p>
     <mat-action-row>
       <span fxFlex="80%" fxLayoutAlign="center"></span>
-      <button mat-button *ngIf="step" (click)="prevStep()" fxFlex="10%" color="warn">Previous</button>
-      <button mat-button *ngIf="i !== last" (click)="nextStep()" fxFlex="10%" color="accent">Next</button>
-      <button mat-button *ngIf="i === last" (click)="nextStep()" fxFlex="10%" color="accent">End</button>
+      <button mat-button *ngIf="step" (click)="prevStep()" fxFlex="10%" color="warn" aria-label="Previous">Previous</button>
+      <button mat-button *ngIf="i !== last" (click)="nextStep()" fxFlex="10%" color="accent" aria-label="Next">Next</button>
+      <button mat-button *ngIf="i === last" (click)="nextStep()" fxFlex="10%" color="accent" aria-label="End">End</button>
     </mat-action-row>
   </mat-expansion-panel>
 </mat-accordion>

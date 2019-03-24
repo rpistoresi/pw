@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, ElementRef, Input, Output } from '@angular/core';
 import { SidenavService } from '../side-nav/sidenav.service';
 import { MatBottomSheet } from '@angular/material';
 import { BottomSheetComponent } from '../bottom-sheet/bottom-sheet.component';

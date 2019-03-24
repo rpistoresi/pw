@@ -11,7 +11,7 @@ import { MatBottomSheetRef } from '@angular/material';
   }`]
 })
 export class BottomSheetComponent {
-
+  resume = './assets/Pistoresi_Resume.pdf';
   constructor(private bottomSheetRef: MatBottomSheetRef<BottomSheetComponent>) {}
 
   dismissBottomSheet(): void {
