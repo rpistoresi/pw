@@ -20,6 +20,7 @@ a.mat-raised-button:link, a.mat-raised-button:hover {
 }
 
 .section-header {
+  font-size: 34px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;

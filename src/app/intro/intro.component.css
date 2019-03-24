@@ -15,7 +15,7 @@
   padding-top: 64px;
   padding-left: 10px;
   padding-right: 10px;
-  color: lightgray;
+  color: #d3d3d3 /* lightgrey */
 }
 
 .name {
@@ -23,10 +23,11 @@
 }
 
 .career {
-  color: lightgray;
+  color: #d3d3d3;  /* lightgrey */
   font-size: 24px;
 }
 
 .addict {
+  color: #08a9e9; /* tourqoise */
   font-size: 12px;
 }

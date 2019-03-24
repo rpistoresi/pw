@@ -1,9 +1,5 @@
-fa-icon:hover {
-  color: rgb(8, 169, 233);
-}
-
-h3, h4 {
-  color: rgb(8, 169, 233);
+.job-date, fa-icon:hover {
+  color:#08a9e9; /* tourqoise */
 }
 
 p {

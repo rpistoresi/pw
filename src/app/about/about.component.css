@@ -7,8 +7,13 @@
   margin-left: 15px;
 }
 
-mat-list-item:hover fa-icon, mat-list-item:hover h4, h3 {
-  color: rgb(8, 169, 233);
+.title {
+  color: #08a9e9;
+  font-size: 24px;
+}
+
+mat-list-item:hover fa-icon, mat-list-item:hover p {
+  color: #08a9e9;
 }
 
 p {
@@ -28,6 +33,10 @@ img {
     width: 250px;
     border-radius: 10px 100px / 120px;
     margin: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
   }
 
   p {

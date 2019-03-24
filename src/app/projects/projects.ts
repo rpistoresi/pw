@@ -10,10 +10,10 @@ export const PROJECTS: Project[] = [
     content: `Exploring current nerdiness in blog form. Leveraging Docker to serve
       each component of the MEAN stack in separate containers.`,
     tools: [
-      { prefix: 'fab', icon: 'aws', url: 'https://aws.amazon.com/' },
-      { prefix: 'fab', icon: 'angular', url: 'https://angular.io/' },
-      { prefix: 'fab', icon: 'docker', url: 'https://docker.com/' },
-      { prefix: 'fab', icon: 'github', url: 'https://github.com/' },
+      { prefix: 'fab', icon: 'aws' },
+      { prefix: 'fab', icon: 'angular' },
+      { prefix: 'fab', icon: 'docker' },
+      { prefix: 'fab', icon: 'github' },
     ],
     url: null
   },
@@ -25,16 +25,12 @@ export const PROJECTS: Project[] = [
     },
     content: `First iteration of my personal website using Angular 7 and hosted on Github Pages.`,
     tools: [
-      {
-        prefix: 'fab',
-        icon: 'angular',
-        url: 'https://angular.io/'
-      },
-      { prefix: 'fab', icon: 'html5', url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/' },
-      { prefix: 'fab', icon: 'css3', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3/' },
-      { prefix: 'fab', icon: 'js', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/' },
-      { prefix: 'fab', icon: 'font-awesome', url: 'https://fontawesome.com/' },
-      { prefix: 'fab', icon: 'github', url: 'https://github.com/' }
+      { prefix: 'fab', icon: 'angular' },
+      { prefix: 'fab', icon: 'html5' },
+      { prefix: 'fab', icon: 'css3' },
+      { prefix: 'fab', icon: 'js' },
+      { prefix: 'fab', icon: 'font-awesome' },
+      { prefix: 'fab', icon: 'github' }
     ],
     url: 'https://github.com/rpistoresi/pw/'
   },
@@ -48,10 +44,10 @@ export const PROJECTS: Project[] = [
       and newsletter subscription. Built with a team at the University of Nevada, Reno
       as part of our senior project.`,
     tools: [
-      { prefix: 'fab', icon: 'aws', url: 'https://aws.amazon.com/' },
-      { prefix: 'fab', icon: 'php', url: 'http://www.php.net/' },
-      { prefix: 'fab', icon: 'wordpress', url: 'https://wordpress.org/' },
-      { prefix: 'fab', icon: 'bitbucket', url: 'https://bitbucket.org/' },
+      { prefix: 'fab', icon: 'aws' },
+      { prefix: 'fab', icon: 'php' },
+      { prefix: 'fab', icon: 'wordpress' },
+      { prefix: 'fab', icon: 'bitbucket' }
     ],
     url: 'https://github.com/rpistoresi/ilr/'
   },
@@ -65,7 +61,7 @@ export const PROJECTS: Project[] = [
       using the Message Passaging Interface (MPI) with a hybrid
       load balancing technique.`,
     tools: [
-      { prefix: 'fab', icon: 'github', url: 'https://github.com/' }
+      { prefix: 'fab', icon: 'github' }
     ],
     url: 'https://github.com/rpistoresi/parallelizing-mandelbrot/'
   },

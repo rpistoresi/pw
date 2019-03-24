@@ -9,8 +9,10 @@
       <mat-panel-description>{{ experiences[i]?.acronym }}</mat-panel-description>
       <fa-icon [icon]="['fas',experiences[i].icon]" [fixedWidth]="true" size="md"></fa-icon>
     </mat-expansion-panel-header>
-    <h3>{{ experiences[i].company }}</h3>
-    <h4>{{ experiences[i].date }}</h4>
+    <div class="job-date">
+      <h1>{{ experiences[i].company }}</h1>
+      <h2>{{ experiences[i].date }}</h2>
+    </div>
     <p>{{ experiences[i].summary }}</p>
     <mat-action-row>
       <span fxFlex="80%" fxLayoutAlign="center"></span>

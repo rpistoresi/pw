@@ -13,8 +13,8 @@ mat-card-header {
   padding-right: 10px;
 }
 
-mat-card-header:hover {
-  color: rgb(8, 169, 233);
+mat-card-header:hover, .brand-icons:hover {
+  color: #08a9e9; /* tourqouise */
 }
 
 .hovering {
@@ -24,8 +24,4 @@ mat-card-header:hover {
 .brand-icons {
   padding: 5px;
   font-size: 24px;
-}
-
-.brand-icons:hover {
-  color: rgb(8, 169, 233);
 }
