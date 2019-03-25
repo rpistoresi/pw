@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -13,8 +13,6 @@ export class ContactComponent {
   url = 'mailto:rpistoresi@nevada.unr.edu';
   invite = `I am always open to new opportunities and challenges
     that align with my skills and interests.`;
-
-  @Input() darkMode = false;
 
   constructor() { }
 

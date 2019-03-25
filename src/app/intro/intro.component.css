@@ -12,10 +12,10 @@
 }
 
 .intro-text {
-  padding-top: 64px;
+  padding-top: 42px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #d3d3d3 /* lightgrey */
+  color: white;
 }
 
 .name {
@@ -23,11 +23,20 @@
 }
 
 .career {
-  color: #d3d3d3;  /* lightgrey */
   font-size: 24px;
 }
 
+@media (max-width: 425px) {
+  .name {
+    font-size: 36px;
+  }
+
+  .career {
+    font-size: 18px;
+  }
+}
+
 .addict {
-  color: #08a9e9; /* tourqoise */
   font-size: 12px;
+  color: #08a9e9; /* tourqoise */
 }
