@@ -1,6 +1,6 @@
 # Personal Website
 
-This project started from a desire to create a portfolio website and turned into a personal project all on its own. I'm working towards creating a and this was a great way to learn about some of the mode
+This project started from a desire to create a portfolio website and turned into a personal project all on its own.
 
 ## Getting Started
 1.  **Install the Angular CLI**
